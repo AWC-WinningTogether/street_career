@@ -39,8 +39,8 @@ const config: webpack.Configuration & { devServer: unknown } = {
   },
   devServer: {
     contentBase: path.join(__dirname, "build"),
-    compress: true,
-    port: 4000,
+    compress: false,
+    port: 4000
   },
 };
 
