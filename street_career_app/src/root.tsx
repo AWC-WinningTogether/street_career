@@ -8,6 +8,7 @@ import SignIn from './pages/sign-in'
 import SignUp from './pages/sign-up'
 import { CircularProgress } from "@material-ui/core";
 import { UserInfo } from "./model/common";
+import { ScoringComponent } from "./components/scoring";
 
 export interface RootComponentProps extends WithStyles<typeof styles> { }
 
@@ -97,6 +98,7 @@ class RootComponent extends React.Component<RootComponentProps, RootComponentSta
             return <>
                 <CommonAppBarComponent {...appBarProps} />
                 <div> Hi {state.userInfo.fullName}</div>
+                <ScoringComponent></ScoringComponent>
             </>
         }
         return <>
